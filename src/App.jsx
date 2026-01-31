@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Register from "./pages/Register";
 import Navbar from './components/Navbar';
 import stockBg from './assets/stock_bg.png';
 import Home from './pages/Home';
@@ -27,6 +28,8 @@ function App() {
         {/* Content Wrapper */}
         <div className="relative z-10">
           <Routes>
+            <Route path="/register" element={<Register />} />
+
             <Route path="/login" element={<Login />} />
 
             {/* Protected Routes */}
